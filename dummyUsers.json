@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Aarav Sharma",
+        "email": "aarav.sharma@yopmail.com",
+        "password": "$2b$12$7LsUldFQGppxdU2rFhcr6OnlsGCllmvfVzyIXMGPONljztpMkSAYO",
+        "gender": "male",
+        "role": "user",
+        "imageUrl": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+        "name": "Isha Verma",
+        "email": "isha.verma@lpu.ac.in",
+        "password": "$2b$12$7LsUldFQGppxdU2rFhcr6OnlsGCllmvfVzyIXMGPONljztpMkSAYO",
+        "gender": "female",
+        "role": "user",
+        "imageUrl": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    {
+        "name": "Rohan Singh",
+        "email": "rohan.singh@yopmail.com",
+        "password": "$2b$12$7LsUldFQGppxdU2rFhcr6OnlsGCllmvfVzyIXMGPONljztpMkSAYO",
+        "gender": "male",
+        "role": "admin",
+        "imageUrl": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+        "name": "Sneha Kapoor",
+        "email": "sneha.kapoor@lpu.ac.in",
+        "password": "$2b$12$7LsUldFQGppxdU2rFhcr6OnlsGCllmvfVzyIXMGPONljztpMkSAYO",
+        "gender": "female",
+        "role": "user",
+        "imageUrl": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+        "name": "Yuvraj Mehta",
+        "email": "yuvraj.mehta@yopmail.com",
+        "password": "$2b$12$7LsUldFQGppxdU2rFhcr6OnlsGCllmvfVzyIXMGPONljztpMkSAYO",
+        "gender": "male",
+        "role": "user",
+        "imageUrl": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+        "name": "Priya Desai",
+        "email": "priya.desai@lpu.ac.in",
+        "password": "$2b$12$7LsUldFQGppxdU2rFhcr6OnlsGCllmvfVzyIXMGPONljztpMkSAYO",
+        "gender": "female",
+        "role": "admin",
+        "imageUrl": "https://randomuser.me/api/portraits/women/6.jpg"
+    },
+    {
+        "name": "Karan Patel",
+        "email": "karan.patel@yopmail.com",
+        "password": "$2b$12$7LsUldFQGppxdU2rFhcr6OnlsGCllmvfVzyIXMGPONljztpMkSAYO",
+        "gender": "male",
+        "role": "user",
+        "imageUrl": "https://randomuser.me/api/portraits/men/7.jpg"
+    },
+    {
+        "name": "Ananya Nair",
+        "email": "ananya.nair@lpu.ac.in",
+        "password": "$2b$12$7LsUldFQGppxdU2rFhcr6OnlsGCllmvfVzyIXMGPONljztpMkSAYO",
+        "gender": "female",
+        "role": "super-admin",
+        "imageUrl": "https://randomuser.me/api/portraits/women/8.jpg"
+    },
+    {
+        "name": "Devansh Reddy",
+        "email": "devansh.reddy@yopmail.com",
+        "password": "$2b$12$7LsUldFQGppxdU2rFhcr6OnlsGCllmvfVzyIXMGPONljztpMkSAYO",
+        "gender": "male",
+        "role": "user",
+        "imageUrl": "https://randomuser.me/api/portraits/men/9.jpg"
+    },
+    {
+        "name": "Meera Joshi",
+        "email": "meera.joshi@lpu.ac.in",
+        "password": "$2b$12$7LsUldFQGppxdU2rFhcr6OnlsGCllmvfVzyIXMGPONljztpMkSAYO",
+        "gender": "female",
+        "role": "user",
+        "imageUrl": "https://randomuser.me/api/portraits/women/10.jpg"
+    }
+]
