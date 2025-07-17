@@ -14,7 +14,7 @@ app.use(morgan("dev")); // global middleware
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
+    origin: [process.env.FRONTEND_URL_LOCAL, process.env.FRONTEND_URL_VERCEL],
     credentials: true,
   })
 );
