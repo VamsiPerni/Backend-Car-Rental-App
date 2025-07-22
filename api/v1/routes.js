@@ -3,6 +3,7 @@ const { authRouter } = require("./auth/routes");
 const { usersRouter } = require("./users/routes");
 const { userAuthenticationMiddleware } = require("./middleware");
 const { productRouter } = require("./products/routes");
+const { llmRouter } = require("./llm/routes");
 
 const apiRouter = express.Router();
 
@@ -13,5 +14,6 @@ apiRouter.use(userAuthenticationMiddleware); // authentication
 
 apiRouter.use("/users", usersRouter);
 apiRouter.use("/products", productRouter);
+apiRouter.use("/ai", llmRouter);
 
 module.exports = { apiRouter };
