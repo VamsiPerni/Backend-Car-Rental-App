@@ -4,8 +4,17 @@ const carsComparisonController = async (req, res) => {
   try {
     const { cars } = req.body;
     const comparisons = await getGeminiAiResponse(`
-        Compare these two cars, the name of cars is ${cars[0]} and ${cars[1]}.After comparison only share JSON Format response back without any extra indentation or any extra comments.The key should be comparison parameter and the value should be the short comparion result of these two cars on that parameter    
-    `);
+  Compare ${cars[0]} and ${cars[1]} in JSON format with this structure:
+  {
+    "parameter": {
+      "description": "general comparison",
+      "${cars[0]}": "specific value for car 1",
+      "${cars[1]}": "specific value for car 2",
+      "verdict": "which is better"
+    }
+  }
+  Provide at least 10 comparison parameters.
+`);
 
     console.log(comparisons);
     const comparisonObjStr = comparisons
