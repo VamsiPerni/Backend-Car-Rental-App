@@ -52,4 +52,32 @@ const searchProductsController = async (req, res) => {
   }
 };
 
-module.exports = { getAllProductsController, searchProductsController };
+const getProductByIdController = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const product = await Product.findById(id);
+    if (!product) {
+      return res.status(404).json({
+        isSuccess: false,
+        message: "Product not found",
+      });
+    }
+    res.status(200).json({
+      isSuccess: true,
+      message: "Product found",
+      data: { product },
+    });
+  } catch (err) {
+    console.error("Error in getProductByIdController:", err.message);
+    res.status(500).json({
+      isSuccess: false,
+      message: "Internal Server Error",
+    });
+  }
+};
+
+module.exports = {
+  getAllProductsController,
+  searchProductsController,
+  getProductByIdController,
+};
