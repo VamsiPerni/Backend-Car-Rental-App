@@ -1,8 +1,8 @@
 const express = require("express");
 const {
-    sendUserBasicInfoController,
-    sendUserDetailsController,
-    updateDisplayPictureController,
+  sendUserBasicInfoController,
+  sendUserDetailsController,
+  updateDisplayPictureController,
 } = require("./controllers");
 
 const multer = require("multer");
@@ -17,6 +17,10 @@ usersRouter.get("/details", sendUserDetailsController);
 
 // /api/v1/users/display-picture
 // ... middleware chaining
-usersRouter.put("/display-picture", upload.single("displayPicture"), updateDisplayPictureController);
+usersRouter.put(
+  "/display-picture",
+  upload.single("displayPicture"),
+  updateDisplayPictureController
+);
 
 module.exports = { usersRouter };

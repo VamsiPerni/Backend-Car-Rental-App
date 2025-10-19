@@ -24,6 +24,7 @@
     "morgan": "^1.10.0",
     "multer": "^2.0.1",
     "nanoid": "^3.3.4",
-    "nodemailer": "^7.0.5"
+    "nodemailer": "^7.0.5",
+    "resend": "^6.2.0"
   }
 }

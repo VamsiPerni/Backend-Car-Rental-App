@@ -1,5 +1,10 @@
 const express = require("express");
-const { userSignupController, userLoginController, sendOtpController, logoutController } = require("./controller");
+const {
+  userSignupController,
+  userLoginController,
+  sendOtpController,
+  logoutController,
+} = require("./controller");
 const { signupValidator, loginValidator, otpValidator } = require("./dto");
 
 const authRouter = express.Router();
