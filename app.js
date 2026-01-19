@@ -1,5 +1,11 @@
 const dotEnv = require("dotenv");
 dotEnv.config();
+
+if (process.env.NODE_ENV !== "production") {
+  const dns = require("dns");
+  dns.setServers([process.env.DNS_SERVER, process.env.DNS_ALTERNATE_SERVER]);
+}
+
 require("./config/db");
 require("./utils/emailHelpers");
 const express = require("express");
@@ -20,7 +26,7 @@ app.use(
       process.env.FRONTEND_URL_CUSTOM_DOMAIN,
     ],
     credentials: true,
-  })
+  }),
 );
 
 app.use(express.json());
